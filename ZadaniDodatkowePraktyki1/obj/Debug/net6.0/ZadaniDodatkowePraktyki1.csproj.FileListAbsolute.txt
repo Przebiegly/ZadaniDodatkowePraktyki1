@@ -19,3 +19,5 @@
 /home/lauer/Dokumenty/Praktyki/ZadaniDodatkowePraktyki1/ZadaniDodatkowePraktyki1/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
 /home/lauer/Dokumenty/Praktyki/ZadaniDodatkowePraktyki1/ZadaniDodatkowePraktyki1/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.ServiceProcess.ServiceController.dll
 /home/lauer/Dokumenty/Praktyki/ZadaniDodatkowePraktyki1/ZadaniDodatkowePraktyki1/obj/Debug/net6.0/ZadaniDodatkowePraktyki1.csproj.CopyComplete
+/home/lauer/Dokumenty/Praktyki/ZadaniDodatkowePraktyki1/ZadaniDodatkowePraktyki1/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/lauer/Dokumenty/Praktyki/ZadaniDodatkowePraktyki1/ZadaniDodatkowePraktyki1/bin/Debug/net6.0/MySqlConnector.dll

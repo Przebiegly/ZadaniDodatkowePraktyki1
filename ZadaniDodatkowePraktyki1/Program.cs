@@ -1,6 +1,7 @@
-﻿using System.Diagnostics;
+﻿using System.Data;
+using System.Diagnostics;
 using System.ServiceProcess;
-
+using MySqlConnector;
 
 // ProcessStartInfo startInfo = new ProcessStartInfo();
 // startInfo.FileName = "systemctl";
@@ -51,6 +52,34 @@ using System.ServiceProcess;
 // }
 
 
+
+
+string connectionString = "server=localhost;user=root;database=uslugi";
+    try
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            connection.Open();
+            Console.WriteLine("Połączono");
+            // sluzy to do oczytu z bazy danych 
+            MySqlCommand command = new MySqlCommand("select * from testowa", connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            List<string[]> data = new List<string[]>();
+            while (reader.Read())
+            {
+                data.Add(new string[] { reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString() });
+            }
+            reader.Close();
+            foreach (string[] s in data)
+                Console.WriteLine(string.Join("\t", s));
+        }
+    }  
+    catch (MySqlException ex)
+    {
+        Console.WriteLine("Błąd połączenia: " + ex.Message);
+    }
+
+    
 
 
 
