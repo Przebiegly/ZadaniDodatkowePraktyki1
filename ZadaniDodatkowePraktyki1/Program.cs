@@ -72,6 +72,7 @@ string connectionString = "server=localhost;user=root;database=uslugi";
             reader.Close();
             foreach (string[] s in data)
                 Console.WriteLine(string.Join("\t", s));
+            //------------------------------------------------------------
         }
     }  
     catch (MySqlException ex)
